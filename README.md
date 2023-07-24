@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋, I'm Allyn Ralf Ledesma</h1>
-<h3 align="center">Everyday we learn.</h3>
+<h1 align="left">Hi 👋, I'm Allyn </h1>
+<h3 align="left">Everyday we learn.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=allyn8444&label=Profile%20views&color=0e75b6&style=flat" alt="allyn8444" /> </p>
 
