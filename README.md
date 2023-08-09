@@ -22,6 +22,5 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api?username=allyn8444&show_icons=true&locale=en" alt="allyn8444" /></p>
 
 <!-- <p><img align="center" src="https://github-readme-streak-stats-sigma-five.herokuapp.com/?user=allyn8444&" alt="allyn8444" /></p> -->
-<p><img align="center" src= "https://streak-stats.demolab.com/?user=allyn8444&theme=dark"> </p>
-
+[![GitHub Streak](https://streak-stats.demolab.com/?user=allyn8444&theme=dark)](https://git.io/streak-stats)
 
