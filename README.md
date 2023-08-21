@@ -4,7 +4,7 @@
 
 - 🔭 I’m currently working on **The Blokc as an Intern.**
 
-- 🌱 I’m currently learning **Python and Next.js**
+- 🌱 I’m currently learning **Python and C++**
 
 - 📫 How to reach me **ledesmaallynralf@gmail.com**
 
