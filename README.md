@@ -2,9 +2,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=allyn8444&label=Profile%20views&color=0e75b6&style=flat" alt="allyn8444" /> </p>
 
-- 🔭 I’m currently working on **The Blokc as an Intern.**
+- 🔭 I’m currently working on **something**
 
-- 🌱 I’m currently learning **Python and C++**
+- 🌱 I’m currently learning **Python and Java**
 
 - 📫 How to reach me **ledesmaallynralf@gmail.com**
 
