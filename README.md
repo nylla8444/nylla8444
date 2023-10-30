@@ -15,11 +15,12 @@
 
 <h3 align="left">Languages and Tools:</h3>
 
-<p align="left">
+<p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i= git,html,css,js,ts,python,bootstrap,tailwind,react,nextjs" />
+    <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,dart,flutter,python" />
   </a>
 </p>
+
 
 
 # 📊 GitHub Stats:
