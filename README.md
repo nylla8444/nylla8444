@@ -17,10 +17,9 @@
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,dart,flutter,python" />
+    <img src="https://skillicons.dev/icons?i=git,html,css,js,ts,python,bootstrap,tailwind,react,nextjs" />
   </a>
 </p>
-
 
 
 # 📊 GitHub Stats:
