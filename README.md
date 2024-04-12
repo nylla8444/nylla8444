@@ -4,7 +4,7 @@
 
 - 🔭 I’m currently working on **something**
 
-- 🌱 I’m currently learning **JavaScript and React**
+- 🌱 I’m currently learning **PHP and React**
 
 - 📫 How to reach me **ledesmaallynralf@gmail.com**
 
