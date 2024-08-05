@@ -4,7 +4,7 @@
 
 - 🔭 I’m currently working on **something**
 
-- 🌱 I’m currently learning **Python and React**
+- 🌱 I’m currently learning **Python and Rust**
 
 - 📫 How to reach me **ledesmaallynralf@gmail.com**
 
