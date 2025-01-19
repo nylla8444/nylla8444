@@ -6,7 +6,6 @@
 
 - 🌱 I’m currently learning **Rust**
 
-- 📫 How to reach me **ledesmaallynralf@gmail.com**
 
 <p align="left">Connect with me:</p>
 <p align="left">
