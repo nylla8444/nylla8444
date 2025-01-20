@@ -22,6 +22,6 @@
 
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=nylla8444&&theme=rising-sun&hide_border=true&include_all_commits=false&count_private=false&layout=compact)<br/>
-![](https://github-readme-stats.vercel.app/api?username=nylla8444&theme=rising-sun&hide_border=truee&include_all_commits=false&count_private=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=nylla8444&slateorange&hide_border=true&include_all_commits=false&count_private=false&layout=compact)<br/>
+![](https://github-readme-stats.vercel.app/api?username=nylla8444&theme=slateorange&hide_border=true&include_all_commits=false&count_private=false)<br/>
 [![GitHub Streak](https://github-readme-streak-stat-seven.vercel.app?user=nylla8444&theme=rising-sun&hide_border=true)](https://git.io/streak-stats)
