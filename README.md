@@ -24,4 +24,4 @@
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=allyn8444&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false&layout=compact)<br/>
 ![](https://github-readme-stats.vercel.app/api?username=allyn8444&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false)<br/>
-[![GitHub Streak](https://streak-stats.demolab.com/?user=allyn8444&theme=tokyonight)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stat-seven.vercel.app?user=nylla8444&theme=rising-sun&hide_border=true)](https://git.io/streak-stats)
