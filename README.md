@@ -19,9 +19,10 @@
     <img src="https://skillicons.dev/icons?i=git,github,html,css,js,react,nextjs,python,bootstrap,tailwind,rust" />
   </a>
 </p>
+<!-- <br/> -->
 
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=nylla8444&theme=great-gatsby&hide_border=true&include_all_commits=false&count_private=false&layout=compact)<br/>
-![](https://github-readme-stats.vercel.app/api?username=nylla8444&theme=great-gatsby&hide_border=true&include_all_commits=false&count_private=false)<br/>
+![](https://github-readme-stats.vercel.app/api?username=nylla8444&theme=great-gatsby&hide_border=true&include_all_commits=false&count_private=false)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=nylla8444&theme=great-gatsby&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
 [![GitHub Streak](https://github-readme-streak-stat-seven.vercel.app?user=nylla8444&theme=great-gatsby&hide_border=true)](https://git.io/streak-stats)
