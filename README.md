@@ -25,4 +25,4 @@
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=nylla8444&theme=great-gatsby&hide_border=true&include_all_commits=false&count_private=false)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=nylla8444&theme=great-gatsby&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
-[![GitHub Streak](https://github-readme-streak-stats-five-snowy.vercel.app?user=nylla8444&theme=great-gatsby&mode=weekly&card_width=750)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats-five-snowy.vercel.app?user=nylla8444&theme=great-gatsby&hide_border=true&mode=weekly&card_width=750)](https://git.io/streak-stats)
