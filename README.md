@@ -4,7 +4,7 @@
 
 - 🔭 I’m currently working on **something**
 
-- 🌱 I’m currently learning **Rust**
+- 🌱 I’m currently relearning **JavaScript** and **React**
 
 
 <p align="left">Connect with me:</p>
