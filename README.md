@@ -26,3 +26,8 @@
 ![](https://github-readme-stats.vercel.app/api?username=nylla8444&theme=great-gatsby&hide_border=true&include_all_commits=false&count_private=false)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=nylla8444&theme=great-gatsby&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
 [![GitHub Streak](https://github-readme-streak-stats-five-snowy.vercel.app?user=nylla8444&theme=great-gatsby&hide_border=true&mode=daily&card_width=750)](https://git.io/streak-stats)
+
+<!-- Will expire on June 2028 -->
+<img src="https://github.com/user-attachments/assets/a8988ca8-8786-47eb-bbc9-d36008022244" width="200" height="200" />
+
+
