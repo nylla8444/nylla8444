@@ -8,7 +8,7 @@
 ---
 #### Languages and Tools:
 ```javascript
-const tools = {
+const stack = {
 
     version_control: [ "Git", "GitHub" ],
   
