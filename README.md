@@ -20,7 +20,7 @@ const stack = {
   
     languages: [ "Python", "JavaScript", "TypeScript" ],
   
-    tools: [ "PowerShell", "Visual Studio Code", "Tor" ],
+    tools: [ "PowerShell", "Visual Studio Code", "Tor", "Obsidian" ],
   
     design: [ "Figma", "Adobe Photoshop" ]
 
@@ -42,4 +42,5 @@ const stack = {
 #### GitHub Certification:
 <img src="https://github.com/user-attachments/assets/a8988ca8-8786-47eb-bbc9-d36008022244" width="200" height="200" />
 
-
+---
+If you notice random commits on a private repo, it's just me syncing my Obsidian notes 😅
