@@ -3,7 +3,7 @@
 <img src="https://komarev.com/ghpvc/?username=allyn8444&label=Profile+Views&color=3b82f6&style=for-the-badge" alt="allyn8444" />
 
 ### Hi, I'm Allyn 
-<p>Get to know me on <a href="https://linkedin.com/in/ledesmaar" target="_blank"><strong>LinkedIn</strong></a></p>
+<p>Get to know me on <a href="https://linkedin.com/in/ledesmaar" target="_blank"><strong>LinkedIn</strong></a> but as a human.</p> 
 
 ---
 #### Languages and Tools:
