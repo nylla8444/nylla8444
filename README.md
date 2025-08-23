@@ -33,7 +33,7 @@ const stack = {
  <!-- https://streak-stats.demolab.com/demo/ -->
 <!--![](https://github-readme-stats.vercel.app/api/top-langs/?username=nylla8444&theme=dark&border_radius=5&border_color=3B82F6&icon_color=3B82F6&title_color=3B82F6&text_color=FFFFFF&include_all_commits=true&count_private=true&layout=compact) -->
 
-![](https://github-readme-stats.vercel.app/api?username=nylla8444&theme=dark&border_radius=5&border_color=3B82F6&icon_color=3B82F6&title_color=3B82F6&text_color=FFFFFF&include_all_commits=true&count_private=true&show_icons=true)
+![](https://github-readme-stats.vercel.app/api?username=nylla8444&theme=dark&border_radius=5&border_color=3B82F6&icon_color=3B82F6&title_color=3B82F6&text_color=FFFFFF&include_all_commits=true&count_private=true&show_icons=true&show=prs_merged_percentage)
 
 [![GitHub Streak](https://github-readme-streak-stats-five-snowy.vercel.app?user=nylla8444&theme=dark&border_radius=5&ring=3B82F6&currStreakLabel=3B82F6&border=3B82F6&fire=3B82F6&mode=daily&card_width=750)](https://git.io/streak-stats)
 
