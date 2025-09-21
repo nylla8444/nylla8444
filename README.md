@@ -7,24 +7,35 @@
 
 ---
 #### Languages and Tools:
-```javascript
+
+###### Currently, my main focus is React Vite + TanStack
+
+```typescript
 const stack = {
+  version_control: ["Git", "GitHub"],
 
-    version_control: [ "Git", "GitHub" ],
-  
-    frontend: [ HTML5, "CSS3", "SASS", "TailwindCSS", "JavaScript", "TypeScript", "React", "Next.js" ],
-  
-    backend: [ "Node.js", "Express.js" ],
-  
-    databases: [ "MongoDB", "MySQL" ],
-  
-    languages: [ "Python", "JavaScript", "TypeScript" ],
-  
-    tools: [ "PowerShell", "Visual Studio Code", "Tor", "Obsidian" ],
-  
-    design: [ "Figma", "Adobe Photoshop" ]
+  languages: ["JavaScript", "TypeScript", "Python"],
 
+  frontend: {
+    core: ["HTML5", "CSS3", "JavaScript", "TypeScript"],
+    styling: ["SASS", "TailwindCSS"],
+    frameworks: ["React", "Next.js"],
+    build_tools: ["Vite"],
+    libraries: ["TanStack Query", "TanStack Router"]
+  },
+
+  backend: {
+    runtime: ["Node.js"],
+    frameworks: ["Express.js"]
+  },
+
+  databases: ["MongoDB", "MySQL"],
+
+  tools: ["Visual Studio Code", "PowerShell", "Tor", "Obsidian"],
+
+  design: ["Figma", "Adobe Photoshop"]
 };
+
 ```
 
 ---
