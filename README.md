@@ -40,7 +40,7 @@ const stack = {
 ---
 <!-- Will expire on June 2028 -->
 #### GitHub Certification:
-<img src="https://github.com/user-attachments/assets/a8988ca8-8786-47eb-bbc9-d36008022244" width="200" height="200" />
+<a href="https://www.credly.com/badges/f7c570c8-9a01-45df-8205-c22599909c5e/public_url" target="_blank"><img src="https://github.com/user-attachments/assets/a8988ca8-8786-47eb-bbc9-d36008022244" width="200" height="200" /></a>
 
 ---
 If you notice random commits on a private repo, it's just me syncing my Obsidian notes 😅
