@@ -60,7 +60,7 @@ const stack = {
 <!-- WORD_OF_THE_DAY_START -->
 **Test**
 
-Definition: a means of testing: such as
+Definition: a means of testing: such as; something (such as a series of questions or exercises) for measuring the skill, knowledge, intelligence, capacities, or aptitudes of an individual or group; a procedure, reaction, or reagent used to identify or characterize a substance or constituent
 
 Example: No example provided
 <!-- WORD_OF_THE_DAY_END -->
