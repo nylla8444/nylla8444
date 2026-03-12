@@ -25,6 +25,16 @@ def get_mw_data(word, api_key):
     url = f"https://dictionaryapi.com/api/v3/references/collegiate/json/{word}?key={api_key}"
     return requests.get(url).json()
 
+def find_example_in_dt(dt_list):
+    """Search a dt list for a vis (example) entry, including inside sdsense."""
+    for dt_item in dt_list:
+        if isinstance(dt_item, list) and dt_item[0] == "vis":
+            for vis in dt_item[1]:
+                raw = vis.get("t", "")
+                if raw:
+                    return strip_mw(raw)
+    return None
+
 def extract_definition_and_example(data):
     definition = "No definition found"
     example = ""
@@ -44,22 +54,59 @@ def extract_definition_and_example(data):
                 for sense in sseq_block:
                     if not (isinstance(sense, list) and len(sense) > 1):
                         continue
+
                     if sense[0] == "sense":
-                        dt_list = sense[1].get("dt", [])
+                        sense_data = sense[1]
+                        dt_list = sense_data.get("dt", [])
+
+                        # Check dt directly
+                        found = find_example_in_dt(dt_list)
+                        if found:
+                            example = found
+                            raise StopIteration
+
+                        # Check sdsense (sub-definition sense)
+                        sdsense = sense_data.get("sdsense", {})
+                        found = find_example_in_dt(sdsense.get("dt", []))
+                        if found:
+                            example = found
+                            raise StopIteration
+
+                    elif sense[0] == "bs":
+                        # Bold sense — check its inner sense
+                        inner = sense[1].get("sense", {})
+                        found = find_example_in_dt(inner.get("dt", []))
+                        if found:
+                            example = found
+                            raise StopIteration
+                        sdsense = inner.get("sdsense", {})
+                        found = find_example_in_dt(sdsense.get("dt", []))
+                        if found:
+                            example = found
+                            raise StopIteration
+
                     elif sense[0] == "pseq":
-                        dt_list = []
                         for sub in sense[1]:
-                            if isinstance(sub, list) and len(sub) > 1 and sub[0] == "sense":
-                                dt_list.extend(sub[1].get("dt", []))
-                    else:
-                        continue
-                    for dt_item in dt_list:
-                        if isinstance(dt_item, list) and dt_item[0] == "vis":
-                            for vis in dt_item[1]:
-                                raw = vis.get("t", "")
-                                if raw:
-                                    example = strip_mw(raw)
-                                    raise StopIteration
+                            if not (isinstance(sub, list) and len(sub) > 1):
+                                continue
+                            if sub[0] == "sense":
+                                sense_data = sub[1]
+                            elif sub[0] == "bs":
+                                sense_data = sub[1].get("sense", {})
+                            else:
+                                continue
+
+                            found = find_example_in_dt(sense_data.get("dt", []))
+                            if found:
+                                example = found
+                                raise StopIteration
+
+                            sdsense = sense_data.get("sdsense", {})
+                            found = find_example_in_dt(sdsense.get("dt", []))
+                            if found:
+                                example = found
+                                raise StopIteration
+
     except StopIteration:
         pass
 
@@ -92,6 +139,7 @@ def update_readme(word, definition, example):
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(new_readme)
 
+# Main
 api_key = os.environ.get("MW_API_KEY")
 
 for attempt in range(3):
