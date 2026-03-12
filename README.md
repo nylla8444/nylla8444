@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions
 #### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Methyl**
+**Dome**
 
-Definition: an alkyl radical CH3 derived from methane
+Definition: a stately building : mansion
 
 Example: No example provided
 <!-- WORD_OF_THE_DAY_END -->
