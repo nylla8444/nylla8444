@@ -58,7 +58,11 @@ const stack = {
 ###### Exploring Github Actions
 #### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-Loading today's word...
+**Test**
+
+Definition: a means of testing: such as
+
+Example: No example provided
 <!-- WORD_OF_THE_DAY_END -->
 
 
