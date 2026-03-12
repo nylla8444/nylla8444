@@ -1,0 +1,163 @@
+name: Word of the Day
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-word:
+    runs-on: ubuntu-latest
+    env:
+      MW_API_KEY: ${{ secrets.MW_API_KEY }}
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Write fetch script
+        run: |
+          cat > fetch_word.py << 'PYEOF'
+import os
+import re
+import random
+import requests
+from datetime import date
+
+def strip_mw(text):
+    return re.sub(r'\{[^}]+\}', '', text).strip()
+
+def get_random_word():
+    try:
+        resp = requests.get("https://random-word-api.herokuapp.com/word", timeout=5)
+        word = resp.json()[0]
+        print(f"Random word API returned: {word}")
+        return word
+    except Exception as e:
+        print(f"Random word API failed: {e}, using date-based fallback")
+        # Fallback: date-seeded pick from a small backup list
+        fallback = ["ephemeral","serendipity","eloquent","resilient","tenacity",
+                    "ambiguous","diligent","solitude","pragmatic","altruism",
+                    "candid","stoic","nostalgia","empathy","meticulous"]
+        random.seed(int(date.today().strftime("%Y%m%d")))
+        return random.choice(fallback)
+
+def get_mw_data(word, api_key):
+    url = f"https://dictionaryapi.com/api/v3/references/collegiate/json/{word}?key={api_key}"
+    return requests.get(url).json()
+
+def extract_definition_and_example(data):
+    definition = "No definition found"
+    example = ""
+
+    if not (isinstance(data, list) and data and isinstance(data[0], dict)):
+        return definition, example
+
+    entry = data[0]
+
+    shortdefs = entry.get("shortdef", [])
+    if shortdefs:
+        definition = shortdefs[0]
+
+    try:
+        for def_block in entry.get("def", []):
+            for sseq_block in def_block.get("sseq", []):
+                for sense in sseq_block:
+                    if not (isinstance(sense, list) and len(sense) > 1):
+                        continue
+
+                    if sense[0] == "sense":
+                        dt_list = sense[1].get("dt", [])
+                    elif sense[0] == "pseq":
+                        dt_list = []
+                        for sub in sense[1]:
+                            if isinstance(sub, list) and len(sub) > 1 and sub[0] == "sense":
+                                dt_list.extend(sub[1].get("dt", []))
+                    else:
+                        continue
+
+                    for dt_item in dt_list:
+                        if isinstance(dt_item, list) and dt_item[0] == "vis":
+                            for vis in dt_item[1]:
+                                raw = vis.get("t", "")
+                                if raw:
+                                    example = strip_mw(raw)
+                                    raise StopIteration
+    except StopIteration:
+        pass
+
+    return definition, example
+
+def update_readme(word, definition, example):
+    section = (
+        f"**{word.capitalize()}**\n\n"
+        f"Definition: {definition}\n\n"
+        f"Example: {example if example else 'No example provided'}"
+    )
+
+    start_marker = "<!-- WORD_OF_THE_DAY_START -->"
+    end_marker = "<!-- WORD_OF_THE_DAY_END -->"
+
+    with open("README.md", "r", encoding="utf-8") as f:
+        readme = f.read()
+
+    if start_marker not in readme or end_marker not in readme:
+        print("ERROR: Markers not found in README.md")
+        exit(1)
+
+    new_readme = (
+        readme.split(start_marker)[0]
+        + start_marker + "\n"
+        + section + "\n"
+        + end_marker
+        + readme.split(end_marker)[1]
+    )
+
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(new_readme)
+
+# Main
+api_key = os.environ.get("MW_API_KEY")
+
+# Retry up to 3 times to get a word MW recognizes
+for attempt in range(3):
+    word = get_random_word()
+    data = get_mw_data(word, api_key)
+
+    # MW returns a list of strings (suggestions) if word not found
+    if isinstance(data, list) and data and isinstance(data[0], dict):
+        print(f"Found MW entry for: {word}")
+        break
+    else:
+        print(f"MW has no entry for '{word}', retrying... ({attempt + 1}/3)")
+else:
+    print("Could not find a valid word after 3 attempts, exiting.")
+    exit(1)
+
+definition, example = extract_definition_and_example(data)
+update_readme(word, definition, example)
+print(f"Done: {word} — {definition}")
+PYEOF
+
+      - name: Fetch Word of the Day and update README
+        run: python3 fetch_word.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update Word of the Day: $(date +%Y-%m-%d)" || echo "No changes to commit"
+          git push
