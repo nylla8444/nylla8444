@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions
 #### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Test**
+**Methyl**
 
-Definition: a means of testing: such as; something (such as a series of questions or exercises) for measuring the skill, knowledge, intelligence, capacities, or aptitudes of an individual or group; a procedure, reaction, or reagent used to identify or characterize a substance or constituent
+Definition: an alkyl radical CH3 derived from methane
 
 Example: No example provided
 <!-- WORD_OF_THE_DAY_END -->
