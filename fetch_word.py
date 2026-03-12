@@ -25,99 +25,17 @@ def get_mw_data(word, api_key):
     url = f"https://dictionaryapi.com/api/v3/references/collegiate/json/{word}?key={api_key}"
     return requests.get(url).json()
 
-def find_example_in_dt(dt_list):
-    """Search a dt list for a vis (example) entry, including inside sdsense."""
-    for dt_item in dt_list:
-        if isinstance(dt_item, list) and dt_item[0] == "vis":
-            for vis in dt_item[1]:
-                raw = vis.get("t", "")
-                if raw:
-                    return strip_mw(raw)
+def extract_definition(data):
+    if not (isinstance(data, list) and data and isinstance(data[0], dict)):
+        return None
+    shortdefs = data[0].get("shortdef", [])
+    if shortdefs:
+        return shortdefs[0]
     return None
 
-def extract_definition_and_example(data):
-    definition = "No definition found"
-    example = ""
+def update_readme(word, definition):
+    section = f"**{word.capitalize()}**\n\nDefinition: {definition}"
 
-    if not (isinstance(data, list) and data and isinstance(data[0], dict)):
-        return definition, example
-
-    entry = data[0]
-
-    shortdefs = entry.get("shortdef", [])
-    if shortdefs:
-        definition = shortdefs[0]
-
-    try:
-        for def_block in entry.get("def", []):
-            for sseq_block in def_block.get("sseq", []):
-                for sense in sseq_block:
-                    if not (isinstance(sense, list) and len(sense) > 1):
-                        continue
-
-                    if sense[0] == "sense":
-                        sense_data = sense[1]
-                        dt_list = sense_data.get("dt", [])
-
-                        # Check dt directly
-                        found = find_example_in_dt(dt_list)
-                        if found:
-                            example = found
-                            raise StopIteration
-
-                        # Check sdsense (sub-definition sense)
-                        sdsense = sense_data.get("sdsense", {})
-                        found = find_example_in_dt(sdsense.get("dt", []))
-                        if found:
-                            example = found
-                            raise StopIteration
-
-                    elif sense[0] == "bs":
-                        # Bold sense — check its inner sense
-                        inner = sense[1].get("sense", {})
-                        found = find_example_in_dt(inner.get("dt", []))
-                        if found:
-                            example = found
-                            raise StopIteration
-                        sdsense = inner.get("sdsense", {})
-                        found = find_example_in_dt(sdsense.get("dt", []))
-                        if found:
-                            example = found
-                            raise StopIteration
-
-                    elif sense[0] == "pseq":
-                        for sub in sense[1]:
-                            if not (isinstance(sub, list) and len(sub) > 1):
-                                continue
-                            if sub[0] == "sense":
-                                sense_data = sub[1]
-                            elif sub[0] == "bs":
-                                sense_data = sub[1].get("sense", {})
-                            else:
-                                continue
-
-                            found = find_example_in_dt(sense_data.get("dt", []))
-                            if found:
-                                example = found
-                                raise StopIteration
-
-                            sdsense = sense_data.get("sdsense", {})
-                            found = find_example_in_dt(sdsense.get("dt", []))
-                            if found:
-                                example = found
-                                raise StopIteration
-
-    except StopIteration:
-        pass
-
-    return definition, example
-
-def update_readme(word, definition, example):
-    section = (
-        f"**{word.capitalize()}**\n\n"
-        f"Definition: {definition}\n\n"
-        f"Example: {example if example else 'No example provided'}"
-    )
     start_marker = "<!-- WORD_OF_THE_DAY_START -->"
     end_marker = "<!-- WORD_OF_THE_DAY_END -->"
 
@@ -142,18 +60,18 @@ def update_readme(word, definition, example):
 # Main
 api_key = os.environ.get("MW_API_KEY")
 
-for attempt in range(3):
+for attempt in range(5):
     word = get_random_word()
     data = get_mw_data(word, api_key)
-    if isinstance(data, list) and data and isinstance(data[0], dict):
-        print(f"Found MW entry for: {word}")
+    definition = extract_definition(data)
+    if definition:
+        print(f"Found: {word} — {definition}")
         break
     else:
-        print(f"MW has no entry for '{word}', retrying... ({attempt + 1}/3)")
+        print(f"No MW entry for '{word}', retrying... ({attempt + 1}/5)")
 else:
-    print("Could not find a valid word after 3 attempts, exiting.")
+    print("Could not find a valid word after 5 attempts, exiting.")
     exit(1)
 
-definition, example = extract_definition_and_example(data)
-update_readme(word, definition, example)
+update_readme(word, definition)
 print(f"Done: {word} — {definition}")
