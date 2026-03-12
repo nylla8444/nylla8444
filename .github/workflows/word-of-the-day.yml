@@ -1,0 +1,75 @@
+name: Word of the Day
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # Runs daily at 00:00 UTC = 8 AM Philippines
+  workflow_dispatch:
+
+jobs:
+  update-word:
+    runs-on: ubuntu-latest
+    env:
+      MW_API_KEY: ${{ secrets.MW_API_KEY }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch Word of the Day and update README
+        run: |
+          python <<EOF
+          import os
+          import requests
+          import json
+          import re
+
+          # Use Merriam-Webster Collegiate API
+          api_key = os.environ.get("MW_API_KEY")
+          # Example: "test" — can be replaced with random words if API supports
+          word = "test"
+
+          url = f"https://dictionaryapi.com/api/v3/references/collegiate/json/{word}?key={api_key}"
+          resp = requests.get(url)
+          data = resp.json()
+
+          # Extract definition and example
+          if isinstance(data, list) and len(data) > 0 and isinstance(data[0], dict):
+              definition = data[0].get('shortdef', ["No definition found"])[0]
+              example_raw = data[0].get('def', [[{}]])[0][0].get('sseq', [[[]]])[0][0][1].get('dt', [[""]])[0][1] if 'def' in data[0] else ""
+          else:
+              definition = "No definition found"
+              example_raw = ""
+
+          # Clean HTML tags from example
+          example = re.sub('<[^<]+?>', '', example_raw)
+
+          # Format the section
+          section = f"**{word.capitalize()}**\n\nDefinition: {definition}\n\nExample: {example if example else 'No example provided'}"
+
+          # Update README.md
+          start_marker = "<!-- WORD_OF_THE_DAY_START -->"
+          end_marker = "<!-- WORD_OF_THE_DAY_END -->"
+
+          with open("README.md","r", encoding="utf-8") as f:
+              readme = f.read()
+
+          new_readme = readme.split(start_marker)[0] + start_marker + "\n" + section + "\n" + end_marker + readme.split(end_marker)[1]
+
+          with open("README.md","w", encoding="utf-8") as f:
+              f.write(new_readme)
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update Word of the Day" || echo "No changes"
+          git push
