@@ -58,11 +58,9 @@ const stack = {
 ###### Exploring Github Actions
 #### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Dome**
+**Immaturities**
 
-Definition: a stately building : mansion
-
-Example: No example provided
+Definition: exhibiting less than an expected degree of maturity
 <!-- WORD_OF_THE_DAY_END -->
 
 
