@@ -4,12 +4,16 @@ on:
     - cron: "0 0 * * *"   # Runs daily at 00:00 UTC = 8 AM Philippines
   workflow_dispatch:
   
+permissions:
+  contents: write
+
 jobs:
   update-word:
     runs-on: ubuntu-latest
     env:
       MW_API_KEY: ${{ secrets.MW_API_KEY }}
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,72 +28,60 @@ jobs:
 
       - name: Fetch Word of the Day and update README
         run: |
-          python - <<'PYEOF'
+          python3 -c "
           import os, requests, re
 
-          word = "test"  # can later randomize
-          api_key = os.environ.get("MW_API_KEY")
-          url = f"https://dictionaryapi.com/api/v3/references/collegiate/json/{word}?key={api_key}"
+          def strip_mw(text):
+              return re.sub(r'\{[^}]+\}', '', text).strip()
 
-          resp = requests.get(url)
-          data = resp.json()
+          word = 'test'
+          api_key = os.environ.get('MW_API_KEY')
+          url = f'https://dictionaryapi.com/api/v3/references/collegiate/json/{word}?key={api_key}'
 
-          definition = "No definition found"
-          example = ""
+          data = requests.get(url).json()
 
-          if isinstance(data, list) and len(data) > 0 and isinstance(data[0], dict):
+          definition = 'No definition found'
+          example = ''
+
+          if isinstance(data, list) and data and isinstance(data[0], dict):
               entry = data[0]
-
-              shortdef = entry.get("shortdef", [])
-              if shortdef:
-                  definition = shortdef[0]
-
+              shortdefs = entry.get('shortdef', [])
+              if shortdefs:
+                  definition = '; '.join(shortdefs)
               try:
-                  for def_block in entry.get("def", []):
-                      for sseq_block in def_block.get("sseq", []):
+                  for def_block in entry.get('def', []):
+                      for sseq_block in def_block.get('sseq', []):
                           for sense in sseq_block:
-                              if isinstance(sense, list) and len(sense) > 1:
-                                  sense_data = sense[1]
-                                  if isinstance(sense_data, dict):
-                                      for dt_item in sense_data.get("dt", []):
-                                          if isinstance(dt_item, list) and dt_item[0] == "vis":
-                                              for vis in dt_item[1]:
-                                                  raw = vis.get("t", "")
-                                                  if raw:
-                                                      example = re.sub(r'\{[^}]+\}', '', raw).strip()
-                                                      raise StopIteration
+                              if isinstance(sense, list) and len(sense) > 1 and sense[0] == 'sense':
+                                  for dt_item in sense[1].get('dt', []):
+                                      if isinstance(dt_item, list) and dt_item[0] == 'vis':
+                                          for vis in dt_item[1]:
+                                              raw = vis.get('t', '')
+                                              if raw:
+                                                  example = strip_mw(raw)
+                                                  raise StopIteration
               except StopIteration:
                   pass
 
-          section = (
-              f"**{word.capitalize()}**\n\n"
-              f"Definition: {definition}\n\n"
-              f"Example: {example if example else 'No example provided'}"
-          )
+          section = f'**{word.capitalize()}**\n\nDefinition: {definition}\n\nExample: {example or \"No example provided\"}'
 
-          start_marker = "<!-- WORD_OF_THE_DAY_START -->"
-          end_marker = "<!-- WORD_OF_THE_DAY_END -->"
+          start_marker = '<!-- WORD_OF_THE_DAY_START -->'
+          end_marker = '<!-- WORD_OF_THE_DAY_END -->'
 
-          with open("README.md", "r", encoding="utf-8") as f:
+          with open('README.md', 'r', encoding='utf-8') as f:
               readme = f.read()
 
           if start_marker not in readme or end_marker not in readme:
-              print("ERROR: Markers not found in README.md")
+              print('ERROR: Markers not found in README.md')
               exit(1)
 
-          new_readme = (
-              readme.split(start_marker)[0]
-              + start_marker + "\n"
-              + section + "\n"
-              + end_marker
-              + readme.split(end_marker)[1]
-          )
+          new_readme = readme.split(start_marker)[0] + start_marker + '\n' + section + '\n' + end_marker + readme.split(end_marker)[1]
 
-          with open("README.md", "w", encoding="utf-8") as f:
+          with open('README.md', 'w', encoding='utf-8') as f:
               f.write(new_readme)
 
-          print(f"Done: {word} — {definition}")
-          PYEOF
+          print(f'Done: {word} — {definition}')
+          "
 
       - name: Commit changes
         run: |
