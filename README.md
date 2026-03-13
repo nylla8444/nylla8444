@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions
 #### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Glycerine**
+**Verging**
 
-Definition: glycerol
+Definition: to be contiguous
 <!-- WORD_OF_THE_DAY_END -->
 
 
