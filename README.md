@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions
 #### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Immaturities**
+**Glycerine**
 
-Definition: exhibiting less than an expected degree of maturity
+Definition: glycerol
 <!-- WORD_OF_THE_DAY_END -->
 
 
