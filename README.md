@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions
 #### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Verging**
+**Stocks**
 
-Definition: to be contiguous
+Definition: a store or supply accumulated or available; especially : the inventory of goods of a merchant or manufacturer
 <!-- WORD_OF_THE_DAY_END -->
 
 
