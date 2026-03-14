@@ -2,7 +2,7 @@ name: Word of the Day
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "30 9 * * *"   # Runs daily at 09:30 UTC = 5:30 PM Philippines
   workflow_dispatch:
 
 permissions:
@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MW_API_KEY: ${{ secrets.MW_API_KEY }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
