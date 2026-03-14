@@ -57,8 +57,33 @@ def update_readme(word, definition):
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(new_readme)
 
+def send_email(word, definition, resend_api_key, to_email):
+    today = date.today().strftime("%B %d, %Y")
+    html = f"""
+    <h2>Word of the Day — {today}</h2>
+    <h3>{word.capitalize()}</h3>
+    <p><strong>Definition:</strong> {definition}</p>
+    """
+    payload = {
+        "from": "Word of the Day <onboarding@resend.dev>",
+        "to": [to_email],
+        "subject": f"Word of the Day: {word.capitalize()} — {today}",
+        "html": html
+    }
+    resp = requests.post(
+        "https://api.resend.com/emails",
+        headers={"Authorization": f"Bearer {resend_api_key}", "Content-Type": "application/json"},
+        json=payload
+    )
+    if resp.status_code == 200:
+        print(f"Email sent to {to_email}")
+    else:
+        print(f"Email failed: {resp.status_code} {resp.text}")
+
 # Main
 api_key = os.environ.get("MW_API_KEY")
+resend_api_key = os.environ.get("RESEND_API_KEY")
+to_email = os.environ.get("NOTIFY_EMAIL")
 
 for attempt in range(5):
     word = get_random_word()
@@ -75,3 +100,8 @@ else:
 
 update_readme(word, definition)
 print(f"Done: {word} — {definition}")
+
+if resend_api_key and to_email:
+    send_email(word, definition, resend_api_key, to_email)
+else:
+    print("Skipping email: RESEND_API_KEY or NOTIFY_EMAIL not set.")
