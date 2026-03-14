@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Phylactery**
+**Licensure**
 
-Definition: either of two small square leather boxes containing slips inscribed with scriptural passages and traditionally worn on the left arm and on the head by observant Jewish men and especially adherents of Orthodox Judaism during morning weekday prayers
+Definition: the granting of licenses especially to practice a profession; also : the state of being licensed
 <!-- WORD_OF_THE_DAY_END -->
 
 &nbsp;
