@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions
 #### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Stocks**
+**Phylactery**
 
-Definition: a store or supply accumulated or available; especially : the inventory of goods of a merchant or manufacturer
+Definition: either of two small square leather boxes containing slips inscribed with scriptural passages and traditionally worn on the left arm and on the head by observant Jewish men and especially adherents of Orthodox Judaism during morning weekday prayers
 <!-- WORD_OF_THE_DAY_END -->
 
 
