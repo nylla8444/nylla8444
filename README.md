@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Licensure**
+**Curred**
 
-Definition: the granting of licenses especially to practice a profession; also : the state of being licensed
+Definition: to make a murmuring sound (as of doves)
 <!-- WORD_OF_THE_DAY_END -->
 
 &nbsp;
