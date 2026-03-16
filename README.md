@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Curred**
+**Antichoicers**
 
-Definition: to make a murmuring sound (as of doves)
+Definition: antiabortion
 <!-- WORD_OF_THE_DAY_END -->
 
 &nbsp;
