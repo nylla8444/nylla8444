@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Masteries**
+**Adroitly**
 
-Definition: the authority of a master : dominion
+Definition: having or showing skill, cleverness, or resourcefulness in handling situations
 <!-- WORD_OF_THE_DAY_END -->
 
 &nbsp;
