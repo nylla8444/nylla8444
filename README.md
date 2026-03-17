@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Talented**
+**Masteries**
 
-Definition: a special often athletic, creative, or artistic aptitude
+Definition: the authority of a master : dominion
 <!-- WORD_OF_THE_DAY_END -->
 
 &nbsp;
