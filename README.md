@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Antichoicers**
+**Talented**
 
-Definition: antiabortion
+Definition: a special often athletic, creative, or artistic aptitude
 <!-- WORD_OF_THE_DAY_END -->
 
 &nbsp;
