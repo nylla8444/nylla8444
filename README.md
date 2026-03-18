@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Adroitly**
+**Institutions**
 
-Definition: having or showing skill, cleverness, or resourcefulness in handling situations
+Definition: an established organization or corporation (such as a bank or university) especially of a public character
 <!-- WORD_OF_THE_DAY_END -->
 
 &nbsp;
