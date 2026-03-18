@@ -58,9 +58,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Institutions**
+**Obtain**
 
-Definition: an established organization or corporation (such as a bank or university) especially of a public character
+Definition: to gain or attain usually by planned action or effort
 <!-- WORD_OF_THE_DAY_END -->
 
 &nbsp;
