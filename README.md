@@ -49,12 +49,6 @@ const stack = {
 [![GitHub Streak](https://github-readme-streak-stats-five-snowy.vercel.app?user=nylla8444&theme=dark&border_radius=5&ring=3B82F6&currStreakLabel=3B82F6&border=3B82F6&fire=3B82F6&mode=daily&card_width=750)](https://git.io/streak-stats)
 
 ---
-<!-- Will expire on June 2028 -->
-#### GitHub Certification:
-<a href="https://www.credly.com/badges/f7c570c8-9a01-45df-8205-c22599909c5e/public_url" target="_blank"><img src="https://github.com/user-attachments/assets/a8988ca8-8786-47eb-bbc9-d36008022244" width="200" height="200" /></a>
-
----
-
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
@@ -62,8 +56,11 @@ const stack = {
 
 Definition: to gain or attain usually by planned action or effort
 <!-- WORD_OF_THE_DAY_END -->
-
-&nbsp;
-###### (used Resend for email alerts to monitor the cron job trigger)
 ---
-If you notice random commits on a private repo, it's just me syncing my Obsidian notes 😅
+<!-- Will expire on June 2028 -->
+#### GitHub Certification:
+<a href="https://www.credly.com/badges/f7c570c8-9a01-45df-8205-c22599909c5e/public_url" target="_blank"><img src="https://github.com/user-attachments/assets/a8988ca8-8786-47eb-bbc9-d36008022244" width="200" height="200" /></a>
+
+---
+
+
