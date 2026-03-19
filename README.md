@@ -52,9 +52,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Obtain**
+**Sloops**
 
-Definition: to gain or attain usually by planned action or effort
+Definition: a fore-and-aft rigged boat with one mast and a single jib
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
