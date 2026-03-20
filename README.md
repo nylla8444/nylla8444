@@ -52,9 +52,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Sloops**
+**Glossas**
 
-Definition: a fore-and-aft rigged boat with one mast and a single jib
+Definition: a tongue or lingual structure especially in an insect; especially : the median distal lobe of the labium of an insect
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
