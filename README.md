@@ -52,9 +52,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Glossas**
+**Keelboat**
 
-Definition: a tongue or lingual structure especially in an insect; especially : the median distal lobe of the labium of an insect
+Definition: a shallow covered keeled riverboat that is usually rowed, poled, or towed and that is used for freight
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
