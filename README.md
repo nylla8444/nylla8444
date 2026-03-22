@@ -52,9 +52,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Keelboat**
+**Patienter**
 
-Definition: a shallow covered keeled riverboat that is usually rowed, poled, or towed and that is used for freight
+Definition: enduring pains or trials calmly or without complaint
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
