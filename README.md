@@ -52,9 +52,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Patienter**
+**Odometers**
 
-Definition: enduring pains or trials calmly or without complaint
+Definition: an instrument for measuring the distance traveled (as by a vehicle)
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
