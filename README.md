@@ -52,9 +52,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Odometers**
+**Bunkers**
 
-Definition: an instrument for measuring the distance traveled (as by a vehicle)
+Definition: a bin or compartment for storage; especially : one on shipboard for the ship's fuel
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
