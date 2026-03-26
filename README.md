@@ -52,9 +52,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Squalling**
+**Attracted**
 
-Definition: to cry out raucously : scream
+Definition: to cause to approach or adhere: such as
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
