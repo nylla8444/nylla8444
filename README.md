@@ -1,14 +1,16 @@
-<p align="left"><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=3b82f6&width=450&height=60&lines=Hi+%F0%9F%91%8B%2C+I'm+Allyn!;Everyday+we+learn.;+Autodidact+%F0%9F%A7%91%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB;I+only+code+for+fun!+%F0%9F%92%BB" alt="Typing SVG" /></a></p>
+<!-- <p align="left"><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=3b82f6&width=450&height=60&lines=Hi+%F0%9F%91%8B%2C+I'm+Allyn!;Everyday+we+learn.;+Autodidact+%F0%9F%A7%91%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB;I+only+code+for+fun!+%F0%9F%92%BB" alt="Typing SVG" /></a></p> -->
 
+
+<!-- Credits to: https://tenor.com/users/chissic -->
+<img src="https://media.tenor.com/R8z2KJTDP5kAAAAj/cat-sprigatito.gif" align="left" alt="cat sprigatito">
+<h3> Hi, I'm Allyn </h3>
+<p>Get to know me on <a href="https://linkedin.com/in/ledesmaar" target="_blank"><strong>LinkedIn</strong></a> but as a human.</p>
 <img src="https://komarev.com/ghpvc/?username=allyn8444&label=Profile+Views&color=3b82f6&style=for-the-badge" alt="allyn8444" />
+<br clear="left"/>
 
-### Hi, I'm Allyn 
-<p>Get to know me on <a href="https://linkedin.com/in/ledesmaar" target="_blank"><strong>LinkedIn</strong></a> but as a human.</p> 
+Currently a **CS Student**. I major in Artificial Intelligence **(AI)**. Generally, I just build what I want and need. I play around with new stuff (so I dont get FOMO). I also know 🦀 (Rust btw).  And yes, I love Sprigatito 💚!
 
----
-#### Languages and Tools:
-
-###### Currently, my main focus is React Vite + TanStack
+At present, my comfy stack is `React Vite + TanStack`. But I also know other stuff:
 
 ```typescript
 const stack = {
@@ -25,11 +27,11 @@ const stack = {
   },
 
   backend: {
-    runtime: ["Node.js"],
+    runtime: ["Node.js", "Bun"],
     frameworks: ["Express.js"]
   },
 
-  databases: ["MongoDB", "MySQL"],
+  databases: ["MongoDB", "MySQL", "Strapi"],
 
   tools: ["Visual Studio Code", "PowerShell", "Tor", "Obsidian"],
 
@@ -39,7 +41,7 @@ const stack = {
 ```
 
 ---
-#### GitHub Stats:
+#### GitHub Stats: (forked and self-hosted)
 
  <!-- https://streak-stats.demolab.com/demo/ -->
 <!--![](https://github-readme-stats.vercel.app/api/top-langs/?username=nylla8444&theme=dark&border_radius=5&border_color=3B82F6&icon_color=3B82F6&title_color=3B82F6&text_color=FFFFFF&include_all_commits=true&count_private=true&layout=compact) -->
