@@ -52,9 +52,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Annelidans**
+**Ephemeral**
 
-Definition: any of a phylum (Annelida) of usually elongated segmented coelomate invertebrates (such as earthworms and leeches)
+Definition: lasting a very short time
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
