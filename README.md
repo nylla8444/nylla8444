@@ -54,9 +54,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Ephemeral**
+**Corroborative**
 
-Definition: lasting a very short time
+Definition: to support or help prove with evidence or authority : make more certain
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
