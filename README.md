@@ -54,9 +54,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Corroborative**
+**Winegrower**
 
-Definition: to support or help prove with evidence or authority : make more certain
+Definition: a person who cultivates a vineyard and makes wine
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
