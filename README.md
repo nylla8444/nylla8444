@@ -54,9 +54,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Winegrower**
+**Stithies**
 
-Definition: a person who cultivates a vineyard and makes wine
+Definition: anvil
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
