@@ -54,9 +54,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Stithies**
+**Unfeignedly**
 
-Definition: anvil
+Definition: not feigned or hypocritical : genuine
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
