@@ -54,9 +54,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Unfeignedly**
+**Perissodactyl**
 
-Definition: not feigned or hypocritical : genuine
+Definition: any of an order (Perissodactyla) of nonruminant ungulate mammals (such as a horse, a tapir, or a rhinoceros) that usually have an odd number of toes, molar teeth with transverse ridges on the grinding surface, and the posterior premolars resembling true molars
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
