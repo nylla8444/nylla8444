@@ -54,9 +54,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Serendipity**
+**Purview**
 
-Definition: the ability to find valuable or agreeable things not sought for; also : luck that takes the form of such finding
+Definition: the range or limit of authority, competence, responsibility, concern, or intention
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
