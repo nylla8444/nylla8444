@@ -54,9 +54,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Purview**
+**Breezeways**
 
-Definition: the range or limit of authority, competence, responsibility, concern, or intention
+Definition: a roofed often open passage connecting two buildings (such as a house and garage) or halves of a building
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
