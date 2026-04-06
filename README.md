@@ -54,9 +54,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Breezeways**
+**Ambiguous**
 
-Definition: a roofed often open passage connecting two buildings (such as a house and garage) or halves of a building
+Definition: capable of being understood in two or more possible senses or ways
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
