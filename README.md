@@ -54,9 +54,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Nostalgia**
+**Interrogations**
 
-Definition: a sad pleasure experienced in recalling what no longer exists : a wistful or sentimental yearning for a return to or the return of some real or romanticized past period or some irrecoverable past condition or setting; also : something that evokes nostalgia
+Definition: the act of interrogating someone or something: such as
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
