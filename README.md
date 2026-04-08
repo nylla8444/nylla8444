@@ -15,9 +15,7 @@ At present, my comfy stack is `React Vite + TanStack`. But I also know other stu
 ```typescript
 const stack = {
   version_control: ["Git", "GitHub"],
-
-  languages: ["JavaScript", "TypeScript", "Python"],
-
+  languages: ["JavaScript", "TypeScript", "Python", "Rust"],
   frontend: {
     core: ["HTML5", "CSS3", "JavaScript", "TypeScript"],
     styling: ["SASS", "TailwindCSS"],
@@ -25,19 +23,15 @@ const stack = {
     build_tools: ["Vite"],
     libraries: ["TanStack Query", "TanStack Router"]
   },
-
   backend: {
     runtime: ["Node.js", "Bun"],
-    frameworks: ["Express.js"]
+    frameworks: ["Express.js"],
+    cms: ["Strapi", "Directus"]
   },
-
-  databases: ["MongoDB", "MySQL", "Strapi"],
-
+  databases: ["MongoDB", "MySQL"],
   tools: ["Visual Studio Code", "PowerShell", "Tor", "Obsidian"],
-
   design: ["Figma", "Adobe Photoshop"]
 };
-
 ```
 
 ---
