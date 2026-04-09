@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Interrogations**
+**Moonlighter**
 
-Definition: the act of interrogating someone or something: such as
+Definition: to hold a second job in addition to a regular one
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
