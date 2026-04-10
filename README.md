@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Moonlighter**
+**Dispirit**
 
-Definition: to hold a second job in addition to a regular one
+Definition: to deprive of morale or enthusiasm
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
