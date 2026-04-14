@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Tenacity**
+**Symphysis**
 
-Definition: the quality or state of being tenacious
+Definition: an immovable or more or less movable articulation of various bones in the median plane of the body
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
