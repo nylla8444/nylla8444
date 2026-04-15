@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Symphysis**
+**Liny**
 
-Definition: an immovable or more or less movable articulation of various bones in the median plane of the body
+Definition: a length of cord or cord-like material: such as
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
