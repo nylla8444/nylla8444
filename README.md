@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Itinerantly**
+**Divulgence**
 
-Definition: traveling from place to place; especially : covering a circuit
+Definition: to make known (something, such as a confidence or secret)
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
