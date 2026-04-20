@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Divulgence**
+**Hypocritically**
 
-Definition: to make known (something, such as a confidence or secret)
+Definition: characterized by behavior that contradicts what one claims to believe or feel : characterized by hypocrisy; also : being a person whose actions are contrary to their stated beliefs or feelings : being a hypocrite
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
