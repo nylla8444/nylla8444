@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Hypocritically**
+**Bentgrass**
 
-Definition: characterized by behavior that contradicts what one claims to believe or feel : characterized by hypocrisy; also : being a person whose actions are contrary to their stated beliefs or feelings : being a hypocrite
+Definition: any of a genus (Agrostis) of grasses including important chiefly perennial and rhizomatous pasture and lawn grasses with fine velvety or wiry herbage
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
