@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Bentgrass**
+**Pragmatic**
 
-Definition: any of a genus (Agrostis) of grasses including important chiefly perennial and rhizomatous pasture and lawn grasses with fine velvety or wiry herbage
+Definition: dealing with the problems that exist in a specific situation in a reasonable and logical way instead of depending on ideas and theories : practical as opposed to idealistic
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
