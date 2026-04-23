@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Pragmatic**
+**Bugeye**
 
-Definition: dealing with the problems that exist in a specific situation in a reasonable and logical way instead of depending on ideas and theories : practical as opposed to idealistic
+Definition: a small boat with a flat bottom, a centerboard, and two raked masts
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
