@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Bugeye**
+**Diagrams**
 
-Definition: a small boat with a flat bottom, a centerboard, and two raked masts
+Definition: a graphic design that explains rather than represents; especially : a drawing that shows arrangement and relations (as of parts)
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
