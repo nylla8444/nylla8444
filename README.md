@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Diagrams**
+**Serendipity**
 
-Definition: a graphic design that explains rather than represents; especially : a drawing that shows arrangement and relations (as of parts)
+Definition: the ability to find valuable or agreeable things not sought for; also : luck that takes the form of such finding
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
