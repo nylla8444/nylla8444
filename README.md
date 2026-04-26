@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Serendipity**
+**Ambiguous**
 
-Definition: the ability to find valuable or agreeable things not sought for; also : luck that takes the form of such finding
+Definition: capable of being understood in two or more possible senses or ways
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
