@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Ambiguous**
+**Hyphenate**
 
-Definition: capable of being understood in two or more possible senses or ways
+Definition: to connect (words) or divide (a word, such as a word at the end of a line of print) with a hyphen
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
