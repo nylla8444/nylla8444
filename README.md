@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Hyphenate**
+**Nostalgia**
 
-Definition: to connect (words) or divide (a word, such as a word at the end of a line of print) with a hyphen
+Definition: a sad pleasure experienced in recalling what no longer exists : a wistful or sentimental yearning for a return to or the return of some real or romanticized past period or some irrecoverable past condition or setting; also : something that evokes nostalgia
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
