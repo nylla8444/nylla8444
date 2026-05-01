@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Hypermedia**
+**Discorded**
 
-Definition: a database format similar to hypertext in which text, sound, or video images related to that on a display can be accessed directly from the display
+Definition: disagree, clash
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
