@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Outbrag**
+**Stadtholdership**
 
-Definition: to outdo or surpass in bragging
+Definition: a viceroy in a province of the Netherlands
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
