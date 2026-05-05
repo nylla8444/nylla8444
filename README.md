@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Stadtholdership**
+**Ethephons**
 
-Definition: a viceroy in a province of the Netherlands
+Definition: a synthetic plant growth regulator C2H6ClO3P that induces flowering and abscission by promoting the release of ethylene and has been used to cause early ripening (as of apples on the tree)
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
