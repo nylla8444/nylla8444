@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Ethephons**
+**Seepiest**
 
-Definition: a synthetic plant growth regulator C2H6ClO3P that induces flowering and abscission by promoting the release of ethylene and has been used to cause early ripening (as of apples on the tree)
+Definition: a spot where a fluid (such as water, oil, or gas) contained in the ground oozes slowly to the surface and often forms a pool
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
