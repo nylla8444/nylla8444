@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Seepiest**
+**Ephemeral**
 
-Definition: a spot where a fluid (such as water, oil, or gas) contained in the ground oozes slowly to the surface and often forms a pool
+Definition: lasting a very short time
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
