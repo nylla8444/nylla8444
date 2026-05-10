@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Teensier**
+**Carcinoids**
 
-Definition: tiny
+Definition: a benign or malignant tumor arising especially from the mucosa of the gastrointestinal tract
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
