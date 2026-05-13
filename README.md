@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Uncurrent**
+**Misallocate**
 
-Definition: not current; specifically : not passing in common payment : not receivable at par or full value
+Definition: to allocate (something, such as money or resources) poorly or improperly
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
