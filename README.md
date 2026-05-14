@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Misallocate**
+**Eloquent**
 
-Definition: to allocate (something, such as money or resources) poorly or improperly
+Definition: marked by forceful and fluent expression
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
