@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Eloquent**
+**Desirable**
 
-Definition: marked by forceful and fluent expression
+Definition: having pleasing qualities or properties : attractive; specifically : sexually attractive
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
