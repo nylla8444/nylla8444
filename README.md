@@ -48,9 +48,9 @@ const stack = {
 ###### Exploring Github Actions 
 ###### 📖 Word of the Day
 <!-- WORD_OF_THE_DAY_START -->
-**Desirable**
+**Viridity**
 
-Definition: having pleasing qualities or properties : attractive; specifically : sexually attractive
+Definition: the quality or state of being green
 <!-- WORD_OF_THE_DAY_END -->
 ---
 <!-- Will expire on June 2028 -->
